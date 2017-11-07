@@ -1,0 +1,60 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  port: 5432
+  pool: 30
+
+development:
+  <<: *default
+  username: postgres
+  password: postgres
+  database: studoapp_development1
+
+staging:
+  <<: *default
+  username: postgres
+  password: postgres
+  database: studoapp_staging
+
+production:
+  <<: *default
+  username: postgres
+  password: adminmodule1$
+  database: studoapp_production
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# default: &default
+#   adapter: mysql2
+#   encoding: utf8
+#   username: root
+#   password: root
+#   pool: 5
+
+# development:
+#   <<: *default
+#   database: studoapp_development
+
+# production:
+#   <<: *default
+#   database: studo_production
+
